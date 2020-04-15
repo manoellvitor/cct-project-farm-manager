@@ -13,24 +13,24 @@ engineer on your similar skill level would be able to take over and develop new 
 
 The system will allow us to add new animals to the farm stock.
 
-** The farm will only contain three types of animals: **
+### The farm will only contain three types of animals: ###
 
 - Cows
 - Pigs
 - Chickens
 
-** Each animal has 2 attributes: **
+### Each animal has 2 attributes: ###
 
 - Type
 - Weight
 
-** Each animal has a market value: **
+### Each animal has a market value: ###
 
 - Cows - €500
 - Pigs - €250
 - Chickens - €5
 
-** The animals can only be sold if they reach a certain weight: **
+### The animals can only be sold if they reach a certain weight: ###
 
 - Cows - 300 KG
 - Pigs 100 KG
