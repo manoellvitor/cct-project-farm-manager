@@ -3,10 +3,12 @@ package ie.cct.farmmanager.controll;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import ie.cct.farmmanager.model.Animal;
@@ -57,6 +59,7 @@ public class FarmManagerController {
 	//	Second end point to Check the Average Weight by Type of Animal!
 	//	I Receive the parameter from the URL
 	@GetMapping("calc-average")
+	@ResponseStatus(code = HttpStatus.UNPROCESSABLE_ENTITY)
 	public MessageResponse calcAverage(@RequestParam(required = true)String type) {
 		Double cowsAverageWeight = 0.0;
 		Double pigsAverageWeight = 0.0;
